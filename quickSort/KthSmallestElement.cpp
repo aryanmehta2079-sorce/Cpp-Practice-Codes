@@ -23,13 +23,11 @@ int partation(int arr[],int low,int high){
 }
 
 int QS(int arr[],int low, int high, int k){
-    // if(low<high){
     int m = partation(arr,low,high);
     if ((m+1)==k) return arr[m];
     else if((m+1)<k) return QS(arr,m+1,high,k);
     else QS(arr,low,m-1,k);
-    
-    // }
+
 }
 
 int main(){
