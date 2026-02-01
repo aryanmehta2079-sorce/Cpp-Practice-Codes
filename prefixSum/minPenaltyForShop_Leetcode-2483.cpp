@@ -52,7 +52,7 @@ using namespace std;
     }
 
 int main(){
-    string customer = "YYYY";
+    string customer = "YYNY";
     cout<<bestClosingTime(customer);
 
 }
